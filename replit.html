@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replit.com</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        background-color: #0E1525;
+        height: 9vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav {
+        background-color: #2a3246;
+        height: 90vh;
+        position: relative;
+        top: 17.5rem;
+        left: 1.8rem;
+        border-radius: 0.8rem;
+        width: 45vw;
+        display: none;
+    }
+
+    .main-links-wrapper {
+        margin: 0;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    .main-links-wrapper li {
+        margin: 30px;
+    }
+
+    span {
+        color: white;
+        padding-right: 1.2rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .main-links-wrapper li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .signup-sigin-wrapper {
+        list-style-type: none;
+        position: relative;
+        /* left: 2rem; */
+        width: 100%;
+        padding: 0;
+    }
+
+    .signup-sigin-wrapper li a {
+        text-decoration: none;
+    }
+
+    .signup-sigin-wrapper li .signUp-link,
+    .signup-sigin-wrapper li .logIn-link {
+        /* padding: 0.3rem 2.7rem; */
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+    }
+
+    .signup-sigin-wrapper li .signUp-link {
+        background-color: #0079f2;
+        /* padding: 0.3rem 2.5rem; */
+    }
+
+    .signup-sigin-wrapper li .signUp-link:hover,
+    .signup-sigin-wrapper li .logIn-link:hover {
+        background-color: rgb(87 171 255);
+    }
+
+    .signup-sigin-wrapper li .logIn-link:hover {
+        color: white;
+    }
+
+    .signup-sigin-wrapper li .logIn-link {
+        color: rgb(87 171 255);
+        border: 1px solid whitesmoke;
+    }
+
+    @media (min-width:780px) {
+        header {
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            top: auto;
+            left: auto;
+            border-radius: none;
+            width: 100%;
+            height: 100%;
+            /* align-items: center;
+            justify-content: center; */
+        }
+
+        span {
+            display: none;
+        }
+
+        .main-links-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-links-wrapper li a{
+            font-size: 13px;
+        } 
+        .signup-sigin-wrapper{
+            display: flex;
+        }
+ ul ~li{
+    border: 1px solid red;
+}
+ul li a{
+    display:block;
+    padding: 10px;
+width: 100px;
+}
+    }
+</style>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="main-links-wrapper">
+                <ul class="signup-sigin-wrapper">
+                    <li><a href="" class="signUp-link">Sign up</a></li>
+                    <li><a href="" class="logIn-link">Log in</a></li>
+                </ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Teams Pro</a></li>
+                <li><a href="">Teams for Education</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </nav>
+        <span onclick="showContent()">&#9776;</span>
+    </header>
+    <script>
+
+        function showContent() {
+            let getNavLinks = document.querySelector("nav").style.display;
+            if (getNavLinks == "block") {
+                document.querySelector("nav").style.display = "none";
+            } else {
+                document.querySelector("nav").style.display = "block";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+        margin: 0;
+        /* background-color: currentColor; */
+    }
+    section{
+        width: 50vw;
+        height: 70vh;
+        animation: carousel;
+        /* position: relative;
+        left: 50%; */
+    }
+    img{
+        width: 100%;
+        height: 85%;
+        
+    }
+    .pics-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px auto;
+        background-color: whitesmoke;
+        height: 70vh;
+        width: 60vw;
+    }
+    figcaption{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-size: 1rem;
+    } 
+    figure{
+        transform: translateX(-20%);
+        position: relative;
+        left: 20%;
+    }
+    .previous,.next{
+        background-color: red;
+        height: 100px;
+        width: 200px;
+        z-index: 100;
+    }
+
+@keyframes carousel {
+    from{}
+}
+
+</style>
+<body>
+    <h1>matt</h1>
+   
+<body>
+    <div class="pics-container">
+        <figure>
+            <div class="previous"></div>
+            <section>
+            <img src="../Dribble.com/dribbleimages/seventh.jpg" alt="">
+            <figcaption>Img 1</figcaption>
+            </section>
+            <div class="next"></div>
+        </figure>
+        
+        <!-- <figure>
+            <img src="../Dribble.com/dribbleimages/nineth.png" alt="">
+            <figcaption>Img 2</figcaption>
+        </figure>
+        <figure>
+            <img src="../Dribble.com/dribbleimages/tenth.jpg" alt="">
+            <figcaption>Img 3</figcaption>
+        </figure>
+        <figure>
+            <img src="../Dribble.com/dribbleimages/fifth.jpg" alt="">
+            <figcaption>Img 4</figcaption>
+        </figure> -->
+    </div>
+
+</body>
+<script>
+    // minimum number
+    function minNumber(){
+    const checkMinNum=[50,20,30,40,60,70,80,90,100]
+    let minNum=checkMinNum.sort((a,b)=>{
+        return a-b;
+    })
+    console.log(minNum[0]);
+    }
+    minNumber();
+
+    // maximum number
+    function maxNumber(){
+    const checkMaxNum=[10,20,30,40,50,60,70,80,90,100]
+    let maxNum=checkMaxNum.sort((a,b)=>{
+        return b-a;
+    })
+    console.log(maxNum[0]);
+    }
+    maxNumber();
+</script>
+</html>

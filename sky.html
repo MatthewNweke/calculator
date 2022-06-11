@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skyScript</title>
+</head>
+<body>
+   
+    <button id="clickme"> click me</button>
+    <p>skyscript</p>
+
+    <script>
+        
+// function changeText(){
+//     let changeElement=document.querySelector("p");
+//     changeElement.innerHTML="<h1>matt</h1>"
+// }
+// changeText();
+
+
+
+    //   let clickBtn =document.getElementById("clickme");
+    //   let getLink=document.querySelector("a");
+    //   function faith(){
+    //       console.log("i am a programmer");
+    //   }
+    //   clickBtn.addEventListener("click" ,faith);
+
+    //   getLink.addEventListener("click",faith)
+
+
+
+    // querySelector 
+
+    // document.querySelector("#sky")
+
+
+    // querySelectorAll 
+
+// function checkMin(a,b){
+//   if(a<b){
+//       return a;
+//   }
+//   else{
+//       return b;
+//   }
+//     }
+//    console.log(checkMin(11,22)); 
+function countVowelNum(str){
+    let vowel = str.split("");
+
+    console.log(vowel)
+    let count=0;
+    for (let i = 0; i <= vowel.length; i++) {
+        if(vowel[i]==="a"|| vowel[i]==="e" || vowel[i]==="i" || vowel[i]==="o" || vowel[i]==="u"){
+            count++;
+        }
+        
+    }
+    return count;
+}
+console.log(countVowelNum("aaveedcdu"));
+    </script>
+</body>
+</html>
